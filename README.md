@@ -37,8 +37,13 @@ Note: When deployed in production, you should secure kibana (not described in th
 Example Searches
 Here are a few examples demonstrating some ways to view the aggregated log data:
 
-type:"api" AND (tags:"post" OR tags:"put" OR tags:"delete") -- Show all the modifications on the system
-username:"admin" -- Show all access from a given user
-type:"auth fail" -- Show all authentication failures on the system
+-- Show all the modifications on the system
++type:"api" AND (tags:"post" OR tags:"put" OR tags:"delete")
 
-Now that we have a logging solution setup, we can instruct DUCP to use our logging solution to aggregate logging.
+-- Show all access from a given user
++username:"admin"
+
+-- Show all authentication failures on the system
++type:"auth fail" 
+
+Now that we have a logging solution setup, we can later instruct DUCP to use our logging solution to aggregate logging.
