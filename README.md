@@ -38,12 +38,15 @@ Example Searches
 Here are a few examples demonstrating some ways to view the aggregated log data:
 
 -- Show all the modifications on the system
-+type:"api" AND (tags:"post" OR tags:"put" OR tags:"delete")
+
+type:"api" AND (tags:"post" OR tags:"put" OR tags:"delete")
 
 -- Show all access from a given user
-+username:"admin"
+
+username:"admin"
 
 -- Show all authentication failures on the system
-+type:"auth fail" 
+
+type:"auth fail" 
 
 Now that we have a logging solution setup, we can later instruct DUCP to use our logging solution to aggregate logging.
