@@ -1,12 +1,13 @@
 
 #Setting up an ELK stack
 
-One of the more popular logging stacks is composed of Elasticsearch, Logstash and Kibana or ELK. The following example lab demonstrates how to set up an example deployment which can be used for logging.  
+-One of the more popular logging stacks is composed of Elasticsearch, Logstash and Kibana or ELK. The following example lab demonstrates how to set up an example deployment which can be used for logging.  
 
-We are all about containers, and our logging solution will be container-ized!
+-We are all about containers, and our logging solution will be container-ized!
+
 First, lets create some space to put some data
 
-docker volume create --name orca-elasticsearch-data
+'#'docker volume create --name orca-elasticsearch-data
 
 We haven't composed our containers so that you can see and start each container separately
 
